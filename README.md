@@ -20,7 +20,6 @@ Building **Strata** — a desktop ecosystem for borewell and materials data. Als
 
 ### Other projects
 
-- [**Handwritten Math Expressions using Deep Learning**](https://github.com/Mehulsri07/Handwritten-Math-Expressions-using-Deep-Learning) — deep learning project focused on recognizing handwritten mathematical expressions.
 - [**Watermarking CNN**](https://github.com/Mehulsri07/Watermarking-cnn) — DWT + CNN based image watermarking research project.
 - [**Portfolio Moon**](https://github.com/Mehulsri07/Portfolio-Moon) — personal portfolio website.
 
