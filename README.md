@@ -14,7 +14,7 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 - [**StrataDesk**](https://github.com/Mehulsri07/StrataDesk) — the web predecessor. Full-stack React app with JWT auth, secured API endpoints, a unified cross-section engine, and CI/CD deployment to EC2.
 - [**StrataFlow Viz**](https://github.com/Mehulsri07/strataflow-viz) — the visualization track for turning digitized strata records into visual geological insights.
 
-**IntelliOps CoE** — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Remediation is currently dry-run, designed around safe, reversible actions. [Repo](https://github.com/Mehulsri07/intelliops)
+[**IntelliOps CoE**](https://github.com/Mehulsri07/intelliops) — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Remediation is currently dry-run, designed around safe, reversible actions. [Repo](https://github.com/Mehulsri07/intelliops)
 
 ### Other projects
 
