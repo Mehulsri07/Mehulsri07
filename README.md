@@ -10,25 +10,30 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 
 **Strata** — a desktop ecosystem for digitizing and managing borewell and materials data, born out of my father's drilling business.
 
-- [**StrataField**](https://github.com/Mehulsri07/StrataField) — the core offline-first desktop app. Electron/React/TypeScript/SQLite with custom Excel ingestion, anomaly detection, unit conversion, multi-borewell sheet handling, and lithology classification.
+- [**StrataField**](https://github.com/Mehulsri07/StrataField) — the core offline-first Windows desktop app. Tauri 2 / Rust / React / TypeScript / SQLite, with custom Excel ingestion, anomaly detection, lithology classification, an offline city map of water depths, and borewell cross-sections. Migrated from Electron, cutting the installer from 134 MB to 3.5 MB.
 - [**StrataDesk**](https://github.com/Mehulsri07/StrataDesk) — the web predecessor. Full-stack React app with JWT auth, secured API endpoints, a unified cross-section engine, and CI/CD deployment to EC2.
-- [**StrataFlow Viz**](https://github.com/Mehulsri07/strataflow-viz) — the visualization track for turning digitized strata records into visual geological insights.
+- **StrataFlow Viz** *(private, in progress)* — the visualization track for turning digitized strata records into visual geological insights.
 
-[**IntelliOps CoE**](https://github.com/Mehulsri07/intelliops) — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Remediation is currently dry-run, designed around safe, reversible actions.
+[**IntelliOps CoE**](https://github.com/Mehulsri07/intelliops) — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Approved fixes run as safe, reversible Kubernetes actions (scale, restart, rollback) on a local kind cluster, with a post-fix health check and an audit trail. Built as a team project.
+
+[**Horizon Autoscaler**](https://github.com/Mehulsri07/Horizon-Autoscaler) *(work in progress)* — a Kubernetes-native predictive autoscaler that uses historical metrics to scale workloads ahead of traffic spikes.
+
 ### Other projects
 
 - [**LoadLab**](https://github.com/Mehulsri07/LoadLab) — a Dockerized load-testing sandbox: Nginx and a Go backend with intentionally expensive endpoints, Prometheus/Grafana telemetry and alerting, k6 load generation, deployed on AWS EC2.
 - [**Watermarking CNN**](https://github.com/Mehulsri07/Watermarking-cnn) — deep learning-based invisible image watermarking that combines the Discrete Wavelet Transform (DWT) with a convolutional neural network.
   - Embeds a watermark in the wavelet domain so it stays imperceptible in the host image, with a CNN handling the embedding/extraction.
   - Written up as an IEEE-format paper, co-authored with Manvik Talwar and Srajal Singh (MUJ), and taken through multiple rounds of review and revision.
-  - Stack: Python, DWT, CNN.
-- [**Portfolio Moon**](https://github.com/Mehulsri07/Portfolio-Moon) — personal portfolio website.
+  - Stack: Python, TensorFlow/Keras, DWT, CNN.
+- [**Handwritten Math OCR**](https://github.com/Mehulsri07/Handwritten-Math-Expressions-using-Deep-Learning) — a CRNN + CTC model (TensorFlow) that reads handwritten math expressions from photos and solves them, trained on a Kaggle dataset plus synthetic data.
+- [**Portfolio Moon**](https://mehulsri07.github.io/Portfolio-Moon/) — personal portfolio website with a Matrix-style terminal landing page.
 
 ### Stack
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Electron](https://img.shields.io/badge/-Electron-47848F?style=flat-square&logo=electron&logoColor=white)
+![Tauri](https://img.shields.io/badge/-Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white)
+![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
