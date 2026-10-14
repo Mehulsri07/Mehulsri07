@@ -11,6 +11,7 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 **Strata** — a desktop ecosystem for digitizing and managing borewell and materials data, born out of my father's drilling business.
 
 - [**StrataField**](https://github.com/Mehulsri07/StrataField) — the core offline-first Windows desktop app. Tauri 2 / Rust / React / TypeScript / SQLite, with custom Excel ingestion, anomaly detection, lithology classification, an offline city map of water depths, and borewell cross-sections. Migrated from Electron, cutting the installer from 134 MB to 3.5 MB.
+- [**StrataVision**](https://github.com/Mehulsri07/StrataVision) *(new, in progress)* — a companion Windows app that reads StrataField's records and works out a proposed picture of the ground under all of Lucknow: the likely layers at any spot, along any line and across the city, with how sure it is. It never changes the records and improves as borewells are added.
 - [**StrataDesk**](https://github.com/Mehulsri07/StrataDesk) — the web predecessor. Full-stack React/TypeScript + Express/PostgreSQL app with Excel import, a map dashboard and a cross-section engine. CI builds and smoke-tests the full Docker stack, pushes images to GHCR, and deploys to EC2 via AWS SSM; monitored with Prometheus/Grafana and load-tested with k6.
 - **StrataFlow Viz** *(private, in progress)* — the visualization track for turning digitized strata records into visual geological insights.
 
@@ -20,13 +21,14 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 
 ### Other projects
 
+- [**Off the Heat**](https://github.com/Mehulsri07/heat-shift-bot) ([live](https://d1gu9h8j3658ef.cloudfront.net)) — a heat-safe shift planner for construction-site supervisors, built by team OpusCube for the WeMakeDevs x AWS hackathon (Heat and Water track). A tested Python risk engine (NWS heat index + IMD cut-offs) scores every shift hour, and Amazon Polly turns the plan into a Hindi voice note for the crew. Serverless on AWS: Lambda, API Gateway, DynamoDB, EventBridge Scheduler, S3 and CloudFront, deployed with SAM; React + Capacitor Android app.
 - [**LoadLab**](https://github.com/Mehulsri07/LoadLab) — a Dockerized load-testing sandbox: Nginx and a Go backend with intentionally expensive endpoints, Prometheus/Grafana telemetry and alerting, k6 load generation, deployed on AWS EC2.
 - [**Watermarking CNN**](https://github.com/Mehulsri07/Watermarking-cnn) — deep learning-based invisible image watermarking that combines the Discrete Wavelet Transform (DWT) with a convolutional neural network.
   - Embeds a watermark in the wavelet domain so it stays imperceptible in the host image, with a CNN handling the embedding/extraction.
   - Written up as an IEEE-format paper, co-authored with Manvik Talwar and Srajal Singh (MUJ), and taken through multiple rounds of review and revision.
   - Stack: Python, TensorFlow/Keras, DWT, CNN.
 - [**Handwritten Math OCR**](https://github.com/Mehulsri07/Handwritten-Math-Expressions-using-Deep-Learning) — a CRNN + CTC model (TensorFlow) that reads handwritten math expressions from photos and solves them, trained on a Kaggle dataset plus synthetic data.
-- [**Portfolio Moon**](https://mehulsri07.github.io/Portfolio-Moon/) — personal portfolio website with a Matrix-style terminal landing page.
+- [**Portfolio Moon**](https://mehulsri07.github.io/Portfolio-Moon/) — personal portfolio website with a Three.js 3D moon landing page.
 
 ### Stack
 
