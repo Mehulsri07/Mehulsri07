@@ -6,7 +6,15 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 
 ---
 
-### Currently building
+### Horizon Lab: predictive autoscaling
+
+Three projects joined into one DevOps / AIOps story: forecast traffic, scale ahead of it, and handle the incidents scaling can't fix.
+
+- [**Horizon Autoscaler**](https://github.com/Mehulsri07/Horizon-Autoscaler) *(work in progress)* — a lab that compares reactive scaling with forecast-driven scaling on KEDA, on a replayed real traffic trace. The workload and kind manifests are done, including a scale-down test under load with zero failed requests. The forecaster is next.
+- [**LoadLab**](https://github.com/Mehulsri07/LoadLab) — the workload: a Dockerized load-testing sandbox with Nginx, a Go backend with intentionally expensive endpoints, Prometheus/Grafana telemetry and alerting, and k6, deployed on AWS EC2. Hardened for autoscaling with graceful drain, fault injection and a 19 MB non-root image; one pod is measured at 40 rps under a 200 ms p95 target.
+- [**IntelliOps CoE**](https://github.com/Mehulsri07/intelliops) — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Approved fixes run as safe, reversible Kubernetes actions (scale, restart, rollback) on a local kind cluster, with a post-fix health check and an audit trail. Built as a team project.
+
+### Also building
 
 **Strata** — a desktop ecosystem for digitizing and managing borewell and materials data, born out of my father's drilling business.
 
@@ -15,14 +23,9 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 - [**StrataDesk**](https://github.com/Mehulsri07/StrataDesk) — the web predecessor. Full-stack React/TypeScript + Express/PostgreSQL app with Excel import, a map dashboard and a cross-section engine. CI builds and smoke-tests the full Docker stack, pushes images to GHCR, and deploys to EC2 via AWS SSM; monitored with Prometheus/Grafana and load-tested with k6.
 - **StrataFlow Viz** *(private, in progress)* — the visualization track for turning digitized strata records into visual geological insights.
 
-[**IntelliOps CoE**](https://github.com/Mehulsri07/intelliops) — an agentic AIOps platform for automated incident detection, diagnosis, and governed remediation. The Docker Compose stack includes telemetry ingestion, alert correlation, ML-based RCA, a human-in-the-loop approval gate, feedback-driven learning, a read-model service, and a React operator console. Approved fixes run as safe, reversible Kubernetes actions (scale, restart, rollback) on a local kind cluster, with a post-fix health check and an audit trail. Built as a team project.
-
-[**Horizon Autoscaler**](https://github.com/Mehulsri07/Horizon-Autoscaler) *(work in progress)* — a Kubernetes-native predictive autoscaler that uses historical metrics to scale workloads ahead of traffic spikes.
-
 ### Other projects
 
 - [**Off the Heat**](https://github.com/Mehulsri07/heat-shift-bot) ([live](https://d1gu9h8j3658ef.cloudfront.net)) — a heat-safe shift planner for construction-site supervisors, built by team OpusCube for the WeMakeDevs x AWS hackathon (Heat and Water track). A tested Python risk engine (NWS heat index + IMD cut-offs) scores every shift hour, and Amazon Polly turns the plan into a Hindi voice note for the crew. Serverless on AWS: Lambda, API Gateway, DynamoDB, EventBridge Scheduler, S3 and CloudFront, deployed with SAM; React + Capacitor Android app.
-- [**LoadLab**](https://github.com/Mehulsri07/LoadLab) — a Dockerized load-testing sandbox: Nginx and a Go backend with intentionally expensive endpoints, Prometheus/Grafana telemetry and alerting, k6 load generation, deployed on AWS EC2.
 - [**Watermarking CNN**](https://github.com/Mehulsri07/Watermarking-cnn) — deep learning-based invisible image watermarking that combines the Discrete Wavelet Transform (DWT) with a convolutional neural network.
   - Embeds a watermark in the wavelet domain so it stays imperceptible in the host image, with a CNN handling the embedding/extraction.
   - Written up as an IEEE-format paper, co-authored with Manvik Talwar and Srajal Singh (MUJ), and taken through multiple rounds of review and revision.
@@ -44,7 +47,6 @@ Building toward **DevOps / AIOps** roles, with projects spanning observability, 
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Nginx](https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
