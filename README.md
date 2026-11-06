@@ -4,6 +4,10 @@ Final year B.Tech CSE (AI/ML) student at Manipal University Jaipur, Class of 202
 
 Building toward **DevOps / AIOps** roles, with projects spanning observability, load testing, agentic incident response, and applied AI. Also building **Strata**, a desktop ecosystem for borewell and materials data.
 
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="My koi, redrawn every night from my GitHub activity by git-koi" />
+</p>
+
 ---
 
 ### Horizon Lab: predictive autoscaling
