@@ -3,6 +3,7 @@
 Final year B.Tech CSE (AI/ML) student at Manipal University Jaipur, Class of 2027. Based in Lucknow, India.
 
 Building toward **DevOps / AIOps** roles, with projects spanning observability, load testing, agentic incident response, and applied AI. Also building **Strata**, a desktop ecosystem for borewell and materials data.
+
 ---
 
 ### Horizon Lab: predictive autoscaling
